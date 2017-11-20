@@ -1,0 +1,62 @@
+Casnnot get any of the Orange add-ons to install.  Below is the error message for when I tried to install Image Analytics.
+
+Collecting Orange3-ImageAnalytics
+Requirement already satisfied: Orange3>=3.3.5 in c:\program files\orange\lib\site-packages (from Orange3-ImageAnalytics)
+Requirement already satisfied: requests in c:\program files\orange\lib\site-packages (from Orange3-ImageAnalytics)
+Requirement already satisfied: numpy>=1.10.0 in c:\program files\orange\lib\site-packages (from Orange3-ImageAnalytics)
+Collecting Pillow>=4.2.1 (from Orange3-ImageAnalytics)
+Using cached Pillow-4.3.0-cp36-cp36m-win_amd64.whl
+Collecting hyper>=0.7.0 (from Orange3-ImageAnalytics)
+Using cached hyper-0.7.0-py2.py3-none-any.whl
+Requirement already satisfied: cachecontrol in c:\program files\orange\lib\site-packages (from Orange3-ImageAnalytics)
+Requirement already satisfied: lockfile in c:\program files\orange\lib\site-packages (from Orange3-ImageAnalytics)
+Requirement already satisfied: pyqtgraph>=0.10.0 in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: scipy>=0.16.1 in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: dill in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: chardet>=3.0.2 in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: keyrings.alt in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: setuptools>=36.3 in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: CommonMark>=0.5.5 in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: scikit-learn>=0.18.1 in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: xlrd>=0.9.2 in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: bottleneck>=1.0.0 in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: AnyQt>=0.0.8 in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: serverfiles in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: docutils in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: joblib>=0.9.4 in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: pip>=9.0 in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: keyring in c:\program files\orange\lib\site-packages (from Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: idna<2.7,>=2.5 in c:\program files\orange\lib\site-packages (from requests->Orange3-ImageAnalytics)
+Requirement already satisfied: urllib3<1.23,>=1.21.1 in c:\program files\orange\lib\site-packages (from requests->Orange3-ImageAnalytics)
+Requirement already satisfied: certifi>=2017.4.17 in c:\program files\orange\lib\site-packages (from requests->Orange3-ImageAnalytics)
+Collecting olefile (from Pillow>=4.2.1->Orange3-ImageAnalytics)
+Collecting h2<3.0,>=2.4 (from hyper>=0.7.0->Orange3-ImageAnalytics)
+Using cached h2-2.6.2-py2.py3-none-any.whl
+Collecting hyperframe<4.0,>=3.2 (from hyper>=0.7.0->Orange3-ImageAnalytics)
+Using cached hyperframe-3.2.0-py2.py3-none-any.whl
+Requirement already satisfied: msgpack-python in c:\program files\orange\lib\site-packages (from cachecontrol->Orange3-ImageAnalytics)
+Requirement already satisfied: pyreadline>=1.7.1 in c:\program files\orange\lib\site-packages (from dill->Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: future in c:\program files\orange\lib\site-packages (from CommonMark>=0.5.5->Orange3>=3.3.5->Orange3-ImageAnalytics)
+Requirement already satisfied: pywin32 in c:\program files\orange\lib\site-packages (from keyring->Orange3>=3.3.5->Orange3-ImageAnalytics)
+Collecting hpack<4,>=2.2 (from h2<3.0,>=2.4->hyper>=0.7.0->Orange3-ImageAnalytics)
+Using cached hpack-3.0.0-py2.py3-none-any.whl
+Installing collected packages: olefile, Pillow, hyperframe, hpack, h2, hyper, Orange3-ImageAnalytics
+Exception:
+Traceback (most recent call last):
+File "C:\Program Files\Orange\lib\site-packages\pip\basecommand.py", line 215, in main
+status = self.run(options, args)
+File "C:\Program Files\Orange\lib\site-packages\pip\commands\install.py", line 342, in run
+prefix=options.prefix_path,
+File "C:\Program Files\Orange\lib\site-packages\pip\req\req_set.py", line 784, in install
+**kwargs
+File "C:\Program Files\Orange\lib\site-packages\pip\req\req_install.py", line 851, in install
+self.move_wheel_files(self.source_dir, root=root, prefix=prefix)
+File "C:\Program Files\Orange\lib\site-packages\pip\req\req_install.py", line 1064, in move_wheel_files
+isolated=self.isolated,
+File "C:\Program Files\Orange\lib\site-packages\pip\wheel.py", line 345, in move_wheel_files
+clobber(source, lib_dir, True)
+File "C:\Program Files\Orange\lib\site-packages\pip\wheel.py", line 323, in clobber
+shutil.copyfile(srcfile, destfile)
+File "C:\Program Files\Orange\lib\shutil.py", line 121, in copyfile
+with open(dst, 'wb') as fdst:
+PermissionError: [Errno 13] Permission denied: 'C:\\Program Files\\Orange\\Lib\\site-packages\\OleFileIO_PL.py'
